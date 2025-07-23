@@ -251,8 +251,6 @@
         } else {
             console.log('Không có vai trò hợp lệ, ẩn nút và chuyển hướng đến trang đăng nhập');
             exploreBtn.style.display = 'none'; // Ẩn nút
-            // Có thể thêm chuyển hướng nếu cần
-            window.location.href = '/login.html';
         }
     } else {
         console.error('Không tìm thấy nút "explore-service-btn" trong DOM');
@@ -299,12 +297,12 @@
     } else {
         userMenu.innerHTML += `
             <li class="nav-item">
-                <a class="nav-link" href="/auth/login.html">
+                <a class="nav-link" href="/login.html">
                     <i class="fas fa-sign-in-alt me-1"></i>Đăng nhập
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/auth/register.html">
+                <a class="nav-link" href="/login.html">
                     <i class="fas fa-user-plus me-1"></i>Đăng ký
                 </a>
             </li>

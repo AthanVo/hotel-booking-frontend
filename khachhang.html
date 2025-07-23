@@ -135,7 +135,7 @@
             const token = localStorage.getItem('jwtToken');
             if (!token) {
                 showToast('Bạn cần đăng nhập để truy cập trang này!', 'warning');
-                setTimeout(() => window.location.href = '/auth/login.html', 1500);
+                setTimeout(() => window.location.href = '/login.html', 1500);
                 return false;
             }
             document.getElementById('user-info').style.display = 'block';
